@@ -90,10 +90,10 @@ There are 3 options you can choose from. Option 1 is **highly recommended**.
 1. Generate the build directory in the shadps4-qtlauncher directory.
 
 ```bash
-cmake -S . -B build/ -DENABLE_QT_GUI=ON -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
+cmake -S . -B build/ -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
 ```
 
-To disable the Qt GUI, remove the `-DENABLE_QT_GUI=ON` flag. To change the build type (for debugging), add `-DCMAKE_BUILD_TYPE=Debug`.
+To change the build type (for debugging), add `-DCMAKE_BUILD_TYPE=Debug`.
 
 2. Use CMake to build the project:
 
@@ -141,10 +141,6 @@ You can also install other CMake and Clang related extensions if you'd like, but
 Go to Settings, filter by `@ext:ms-vscode.cmake-tools configure` and disable this option:
 
 ![image](https://raw.githubusercontent.com/shadps4-emu/shadps4-qtlauncher/refs/heads/main/documents/Screenshots/Linux/1.png)
-
-If you wish to build with the Qt GUI, add `-DENABLE_QT_GUI=ON` to the configure arguments:
-
-![image](https://raw.githubusercontent.com/shadps4-emu/shadps4-qtlauncher/refs/heads/main/documents/Screenshots/Linux/2.png)
 
 On the CMake tab, change the options as you wish, but make sure that it looks similar to or exactly like this:
 
